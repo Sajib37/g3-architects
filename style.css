@@ -1,135 +1,199 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
-body{
-    font-family: 'Lato', sans-serif;
-    font-family: 'Work Sans', sans-serif;
+body {
+    font-family: "Lato", sans-serif;
+    font-family: "Work Sans", sans-serif;
 }
-header{
-    background-color: #FFF4E7;
+header {
+    background-color: #fff4e7;
     padding: 50px 230px;
 }
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-ul{
+ul {
     display: flex;
     justify-content: space-between;
     gap: 30px;
     list-style-type: none;
 }
-ul a{
+ul a {
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
-    color: #D9D9D9;
+    color: #d9d9d9;
 }
-h3{
+h3 {
     font-size: 2.8rem;
     font-weight: bold;
 }
-.banner-title{
+.banner-title {
     font-size: 4rem;
     font-weight: bold;
     margin-bottom: 30px;
 }
-.para{
+.para {
     font-size: 16px;
     font-weight: 400;
 }
-.banner-content .para{
+.banner-content .para {
     margin-bottom: 30px;
 }
-.banner img{
+.banner img {
     width: 100%;
 }
-.banner-content{
+.banner-content {
     max-width: 700px;
     text-align: center;
     margin: auto;
 }
-.btn{
-    background-color: #FF900E;
+.btn {
+    background-color: #ff900e;
     padding: 20px 35px;
     font-size: 1.25rem;
     color: white;
     border-radius: 10px;
     cursor: pointer;
 }
-.banner div{
+.banner div {
     margin-top: 40px;
 }
 
-
-.feature{
+.feature {
     padding: 80px 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 4rem;
 }
-.feature-image{
+.feature-image {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
-.feature-image img{
+.feature-image img {
     width: 16rem;
 }
-.feature-description p{
+.feature-description p {
     margin: 20px 0px;
+}
+
+.love {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.love-description div{
+    margin: 20px 10px;
+}
+.love-title{
+    margin-bottom: 20px;
+}
+.love-image{
+    width: 40%;
+    position: relative;
+}
+.love-image div{
+    position: absolute;
+    bottom: 5px;
+    padding: 20px 30px;
+    background-color: #FF900E;
+}
+.love-description{
+    width: 30%;
+}
+.love-image img{
+    width: 100%;
+    height: 100%;
+}
+.love-image span{
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
 }
 /* responsivness */
 
 /* responssive for small device */
-@media screen and (max-width:576px)
-{
-    header{
+@media screen and (max-width: 576px) {
+    header {
         padding: 10px;
     }
-    nav{
+    nav {
         flex-direction: column;
     }
-    nav ul{
+    nav ul {
         flex-direction: column;
         margin-top: 10px;
     }
-    .banner-title{
+    .banner-title {
         font-size: 3rem;
     }
 
-    .feature{
+    .feature {
         flex-direction: column;
         padding: 20px 40px;
     }
-    .feature-image{
+    .feature-image {
         grid-template-columns: 1fr;
+    }
+    .love{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .love-image,.love-description{
+        width: 100%;
+    }
+    .love-image img{
+        width: 95vw;  
+    }     
+    .love-image span{
+        font-size: 40px;
     }
 }
 
 /* responssive for medium device */
 
-@media screen and (min-width:576px) and (max-width:960px)
-{
-    header{
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    header {
         padding: 50px;
     }
-    nav{
+    nav {
         flex-direction: column;
     }
-    nav ul{
+    nav ul {
         flex-direction: column;
         margin-top: 10px;
     }
-    .banner-title{
+    .banner-title {
         font-size: 3rem;
     }
-    .feature{
+    .feature {
         flex-direction: column;
         padding: 50px 100px;
     }
+    .love{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .love-image {
+        width: 100vw;  
+    } 
+    .love-image img{
+        margin: auto;  
+    }    
+    .love-image,.love-description{
+        width: 100%;
+    }
+    .love-image img{
+        width: 98vw; 
+        
+    }     
+    .love-image span{
+        font-size: 40px;
+    }
 }
-
