@@ -63,6 +63,25 @@ h3{
     margin-top: 40px;
 }
 
+
+.feature{
+    padding: 80px 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.feature-image{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.feature-image img{
+    width: 16rem;
+}
+.feature-description p{
+    margin: 20px 0px;
+}
 /* responsivness */
 
 /* responssive for small device */
@@ -80,6 +99,14 @@ h3{
     }
     .banner-title{
         font-size: 3rem;
+    }
+
+    .feature{
+        flex-direction: column;
+        padding: 20px 40px;
+    }
+    .feature-image{
+        grid-template-columns: 1fr;
     }
 }
 
@@ -99,6 +126,10 @@ h3{
     }
     .banner-title{
         font-size: 3rem;
+    }
+    .feature{
+        flex-direction: column;
+        padding: 50px 100px;
     }
 }
 
