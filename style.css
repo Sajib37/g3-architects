@@ -8,12 +8,12 @@ body{
 }
 header{
     background-color: #FFF4E7;
+    padding: 50px 230px;
 }
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 230px;
 }
 ul{
     display: flex;
@@ -34,12 +34,71 @@ h3{
 .banner-title{
     font-size: 4rem;
     font-weight: bold;
+    margin-bottom: 30px;
 }
 .para{
     font-size: 16px;
     font-weight: 400;
 }
-.banner img{
-    height: 700px;
-    width: 1440px;
+.banner-content .para{
+    margin-bottom: 30px;
 }
+.banner img{
+    width: 100%;
+}
+.banner-content{
+    max-width: 700px;
+    text-align: center;
+    margin: auto;
+}
+.btn{
+    background-color: #FF900E;
+    padding: 20px 35px;
+    font-size: 1.25rem;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.banner div{
+    margin-top: 40px;
+}
+
+/* responsivness */
+
+/* responssive for small device */
+@media screen and (max-width:576px)
+{
+    header{
+        padding: 10px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav ul{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .banner-title{
+        font-size: 3rem;
+    }
+}
+
+/* responssive for medium device */
+
+@media screen and (min-width:576px) and (max-width:960px)
+{
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav ul{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .banner-title{
+        font-size: 3rem;
+    }
+}
+
