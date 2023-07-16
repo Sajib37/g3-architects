@@ -90,6 +90,8 @@ h3 {
 }
 .love-description div{
     margin: 20px 10px;
+    box-shadow: 5px 5px 15px 2px gray;
+    border-radius: 10px;
 }
 .love-title{
     margin-bottom: 20px;
@@ -116,6 +118,50 @@ h3 {
     font-size: 60px;
     font-weight: bold;
 }
+.facts-section{
+    padding: 50px 200px;
+}
+.fact-title{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+.facts-description{
+    max-width: 540px;
+}
+.facts-container{
+    display: flex;
+    padding: 100px 50px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.facts{
+    height: 200px;
+    width: 200px;
+    border: 2px solid #FF900E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+.sponsor{
+    padding: 50px 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.sponsor-description{
+    max-width: 540px;
+}
+.sponsor-title{
+    margin-bottom: 20px;
+}
+.sponsor-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 /* responsivness */
 
 /* responssive for small device */
@@ -129,6 +175,9 @@ h3 {
     nav ul {
         flex-direction: column;
         margin-top: 10px;
+    }
+    .banner-content{
+        max-width: 500px;
     }
     .banner-title {
         font-size: 3rem;
@@ -153,6 +202,26 @@ h3 {
     }     
     .love-image span{
         font-size: 40px;
+    }
+    .facts-section{
+        padding: 20px;
+    }
+    .facts-container{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .facts{
+        margin-top: 20px;
+    }
+    .sponsor{
+        padding: 20px;
+    }
+    .sponsor-description{
+        max-width: 340px;
+    }
+    .sponsor-container{
+        flex-direction: column;
+        gap: 40px;
     }
 }
 
@@ -195,5 +264,26 @@ h3 {
     }     
     .love-image span{
         font-size: 40px;
+    }
+    .facts-section{
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .facts-container{
+        flex-direction: column;
+        padding: 40px;
+    }
+    .facts{
+        margin-top: 20px;
+    }
+    .sponsor{
+        padding: 50px;
+    }
+    .sponsor-container{
+        flex-direction: column;
+        gap: 50px;
     }
 }
