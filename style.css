@@ -88,89 +88,89 @@ h3 {
     align-items: center;
     gap: 4rem;
 }
-.love-description div{
+.love-description div {
     margin: 20px 10px;
     box-shadow: 5px 5px 15px 2px gray;
     border-radius: 10px;
     padding: 15px;
 }
-.love-title{
+.love-title {
     margin-bottom: 20px;
 }
-.love-image{
+.love-image {
     width: 40%;
     position: relative;
 }
-.love-image div{
+.love-image div {
     position: absolute;
     bottom: 5px;
     padding: 20px 30px;
-    background-color: #FF900E;
+    background-color: #ff900e;
 }
-.love-description{
+.love-description {
     width: 30%;
 }
-.love-image img{
+.love-image img {
     width: 100%;
     height: 100%;
 }
-.love-image span{
+.love-image span {
     color: white;
     font-size: 60px;
     font-weight: bold;
 }
-.facts-section{
+.facts-section {
     padding: 50px 200px;
 }
-.fact-title{
+.fact-title {
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
 }
-.facts-description{
+.facts-description {
     max-width: 540px;
 }
-.facts-container{
+.facts-container {
     display: flex;
     padding: 100px 50px 20px;
     justify-content: space-between;
     align-items: center;
 }
-.facts{
+.facts {
     height: 200px;
     width: 200px;
-    border: 2px solid #FF900E;
+    border: 2px solid #ff900e;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 5px;
 }
-.sponsor{
+.sponsor {
     padding: 50px 200px;
     display: flex;
     flex-direction: column;
     gap: 50px;
 }
-.sponsor-description{
+.sponsor-description {
     max-width: 540px;
 }
-.sponsor-title{
+.sponsor-title {
     margin-bottom: 20px;
 }
-.sponsor-container{
+.sponsor-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-footer{
+footer {
     padding: 50px 150px;
 }
-footer div{
-    background-color: #FFF4E7;
+footer div {
+    background-color: #fff4e7;
     padding: 40px;
 }
-footer p{
+footer p {
     text-align: center;
 }
 /* responsivness */
@@ -187,7 +187,7 @@ footer p{
         flex-direction: column;
         margin-top: 10px;
     }
-    .banner-content{
+    .banner-content {
         max-width: 500px;
     }
     .banner-title {
@@ -201,40 +201,38 @@ footer p{
     .feature-image {
         grid-template-columns: 1fr;
     }
-    .love{
+    .love {
         flex-direction: column;
         padding: 10px;
     }
-    .love-image,.love-description{
+    .love-image,
+    .love-description {
         width: 100%;
     }
-    .love-image img{
-        width: 95vw;  
-    }     
-    .love-image span{
+    .love-image img {
+        width: 95vw;
+    }
+    .love-image span {
         font-size: 40px;
     }
-    .facts-section{
+    .facts-section, .sponsor {
         padding: 20px;
     }
-    .facts-container{
+    .facts-container {
         flex-direction: column;
         padding: 20px;
     }
-    .facts{
+    .facts {
         margin-top: 20px;
     }
-    .sponsor{
-        padding: 20px;
-    }
-    .sponsor-description{
+    .sponsor-description {
         max-width: 340px;
     }
-    .sponsor-container{
+    .sponsor-container {
         flex-direction: column;
         gap: 40px;
     }
-    footer{
+    footer {
         padding: 20px;
     }
 }
@@ -255,48 +253,52 @@ footer p{
     .banner-title {
         font-size: 3rem;
     }
+    h3 {
+        font-size: 2rem;
+    }
     .feature {
         flex-direction: column;
         padding: 50px 100px;
     }
-    .love{
+    .love {
         flex-direction: column;
         padding: 10px;
     }
-    .love-image {
-        width: 100vw;  
-    } 
-    .love-image img{
-        margin: auto;  
-    }    
-    .love-image,.love-description{
+    /* .love-image {
+        width: 100vw;
+    } */
+    .love-image img {
+        margin: auto;
+    }
+    .love-image,
+    .love-description {
         width: 100%;
     }
-    .love-image img{
-        width: 98vw; 
-        
-    }     
-    .love-image span{
+    .love-image img {
+        width: 98vw;
+    }
+    .love-image span {
         font-size: 40px;
     }
-    .facts-section{
+    .facts-section {
         padding: 50px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .facts-container{
-        flex-direction: column;
+    .facts-container {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
         padding: 40px;
     }
-    .facts{
+    .facts {
         margin-top: 20px;
     }
-    .sponsor{
+    .sponsor {
         padding: 50px;
     }
-    .sponsor-container{
+    .sponsor-container {
         flex-direction: column;
         gap: 50px;
     }
